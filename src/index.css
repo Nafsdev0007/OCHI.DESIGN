@@ -1,0 +1,464 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
+}
+.lenis::-webkit-scrollbar{
+  display: none;
+}
+.responsive_nav {
+  background-color: #212121;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: block;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.responsive_nav .hmm {
+  padding-bottom: 75px;
+  border-bottom: 1px solid #ffffff42;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.all-a {
+  @apply tracking-tight font-medium  relative after:absolute after:w-full after:h-[1px]  after:bg-white after:left-0 after:bottom-[-2px] after:scale-x-0 after:hover:scale-x-100 after:duration-500 after:origin-right after:hover:origin-left;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+/* From Uiverse.io by alshahwan */
+.ab-btn {
+  background-color: #212121;
+  font-family: "Founders Grotesk Medium";
+  padding: 5px;
+  position: relative;
+  width: 12vw;
+  height: 4vw;
+  transition: 0.5s;
+  font-size: 17px;
+}
+
+.ab-btn p {
+  position: absolute;
+  top: 1.1em;
+  left: 2em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.ab-btn svg {
+  position: absolute;
+  top: 1.2em;
+  right: 1em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+}
+
+.ab-btn:hover p {
+  left: 1em;
+  color: #fff;
+}
+
+.ab-btn:hover svg {
+  opacity: 1;
+}
+
+.ab-btn:hover {
+  background-color: #000000;
+}
+
+.buttons h4 {
+  @apply text-sm text-[#000000c5] before:rounded-none mt-4 before:w-full before:opacity-100 before:h-full before:absolute relative before:bg-[#212121] before:left-0 before:-bottom-[100%] overflow-hidden hover:before:bottom-0 before:duration-300 before:ease-in-out px-3 py-1 border-[1px] border-zinc-600 rounded-l-full rounded-r-full;
+}
+
+.buttons h4:hover a {
+  color: #fff;
+}
+.buttons h4 a {
+  position: relative;
+  z-index: 9999;
+}
+.heheheh h4:hover a {
+  color: black;
+}
+.heheheh h4 a {
+  position: relative;
+}
+/* From Uiverse.io by alexmaracinaru */
+/* From Uiverse.io by alexmaracinaru */
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #3b9cb9;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-weight: 700;
+  color: #000;
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #212121;
+  stroke-width: 2;
+  opacity: 80;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: #3b9cb9;
+}
+
+.cta:hover svg {
+  transform: translateX(0);
+}
+
+.cta:active {
+  transform: scale(0.95);
+}
+.ab-btn2 {
+  background-color: #212121;
+  font-family: "Founders Grotesk Medium";
+  padding: 5px;
+  position: relative;
+  width: 17vw;
+  height: 4vw;
+  transition: 0.5s;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.ab-btn2 p {
+  position: absolute;
+  top: 1.1em;
+  left: 2em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.ab-btn2 svg {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  fill: #fff;
+}
+
+.ab-btn2:hover p {
+  left: 1em;
+  color: #fff;
+}
+
+.ab-btn2:hover svg {
+  opacity: 1;
+}
+
+.ab-btn2:hover {
+  background-color: #000000;
+}
+.cta2 {
+  position: relative;
+  margin: auto;
+  padding: 12px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.cta2:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  border-radius: 50px;
+  background: #9eb93b;
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta2 span {
+  position: relative;
+  font-weight: 700;
+  color: #000;
+}
+
+.cta2 svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: #212121;
+  stroke-width: 2;
+  opacity: 80;
+  transform: translateX(-5px);
+  transition: all 0.3s ease;
+}
+
+.cta2:hover:before {
+  width: 100%;
+  background: #9eb93b;
+}
+
+.cta2:hover svg {
+  transform: translateX(0);
+}
+
+.cta2:active {
+  transform: scale(0.95);
+}
+@media (min-width: 768px) {
+  .ab-btn {
+    background-color: #212121;
+    font-family: "Founders Grotesk Medium";
+    padding: 5px;
+    position: relative;
+    width: 20vw;
+    height: 7vw;
+    transition: 0.5s;
+    font-size: 17px;
+  }
+
+  .ab-btn p {
+    position: absolute;
+    top: 1.1em;
+    left: 2em;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    color: #fff;
+  }
+
+  .ab-btn svg {
+    position: absolute;
+    top: 1.2em;
+    right: 1em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff;
+  }
+
+  .ab-btn:hover p {
+    left: 1em;
+    color: #fff;
+  }
+
+  .ab-btn:hover svg {
+    opacity: 1;
+  }
+
+  .ab-btn:hover {
+    background-color: #000000;
+  }
+  
+.ab-btn2 {
+  background-color: #212121;
+  font-family: "Founders Grotesk Medium";
+  padding: 5px;
+  position: relative;
+  width: 28vw;
+  height: 7vw;
+  transition: 0.5s;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.ab-btn2 p {
+  position: absolute;
+  top: 1.1em;
+  left: 2em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.ab-btn2 svg {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  fill: #fff;
+}
+
+.ab-btn2:hover p {
+  left: 1em;
+  color: #fff;
+}
+
+.ab-btn2:hover svg {
+  opacity: 1;
+}
+
+.ab-btn2:hover {
+  background-color: #000000;
+}
+}
+@media (min-width: 1024px) {
+  .ab-btn {
+    background-color: #212121;
+    font-family: "Founders Grotesk Medium";
+    padding: 5px;
+    position: relative;
+    width: 12vw;
+    height: 4vw;
+    transition: 0.5s;
+    font-size: 17px;
+  }
+  
+  .ab-btn p {
+    position: absolute;
+    top: 1.1em;
+    left: 2em;
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+    color: #fff;
+  }
+  
+  .ab-btn svg {
+    position: absolute;
+    top: 1.2em;
+    right: 1em;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transition: 0.5s;
+    height: 1em;
+    fill: #fff;
+  }
+  
+  .ab-btn:hover p {
+    left: 1em;
+    color: #fff;
+  }
+  
+  .ab-btn:hover svg {
+    opacity: 1;
+  }
+  
+  .ab-btn:hover {
+    background-color: #000000;
+  }
+  
+.ab-btn2 {
+  background-color: #212121;
+  font-family: "Founders Grotesk Medium";
+  padding: 5px;
+  position: relative;
+  width: 17vw;
+  height: 4vw;
+  transition: 0.5s;
+  font-size: 17px;
+  font-weight: 200;
+}
+
+.ab-btn2 p {
+  position: absolute;
+  top: 1.1em;
+  left: 2em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #fff;
+}
+
+.ab-btn2 svg {
+  position: absolute;
+  top: 0.75em;
+  right: 1em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  fill: #fff;
+}
+
+.ab-btn2:hover p {
+  left: 1em;
+  color: #fff;
+}
+
+.ab-btn2:hover svg {
+  opacity: 1;
+}
+
+.ab-btn2:hover {
+  background-color: #000000;
+}
+}
